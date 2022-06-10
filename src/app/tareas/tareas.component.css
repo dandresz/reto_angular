@@ -1,0 +1,36 @@
+/*li {
+	list-style: none;
+	margin-bottom: 5px;
+	
+    
+    
+}*/
+
+a.eliminar {
+	margin-left: 20px;
+	text-decoration: none;
+	font-size: 1rem;
+	
+    
+}
+.bloquear {
+	/*color:transparent;*/
+	display: none;
+
+}
+
+button{
+    margin-left: 20px;
+}
+input{
+    margin-left: 10px;
+}
+/*ul{
+    margin-top: 20px;
+}*/
+.col-sm-4 {
+    width: auto;
+}
+.espacio{
+	padding-top: 40px;
+}

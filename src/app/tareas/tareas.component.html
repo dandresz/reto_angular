@@ -1,0 +1,33 @@
+<div class="container">
+    <h1>LISTA DE TAREAS</h1>   
+            <label for="nombtarea" >Nombre de la tarea:</label>
+            <input type="text" id="tarea" [(ngModel)]="nombreTarea" (keyup.enter)="agregarTarea()">
+            <button  (click)="agregarTarea()">Agregar</button>
+                   
+           
+    <!--class="list-group-item d-flex justify-content-between"
+    <ul class="list-group">
+        <li *ngFor="let nombtarea of tareas;let indice = index;">
+            <input [(ngModel)]="nombtarea.cumplido" (change)="Estadotarea()" type="checkbox">
+            {{nombtarea.nombre}}
+            <a  (click)="eliminar(indice)" class="eliminar" [class.bloquear] ="nombtarea.cumplido">&times;</a>
+        </li>
+    </ul>-->
+
+    
+
+     <div class="espacio">
+        <div class="row" *ngFor="let nombtarea of tareas;let indice = index;">
+            <div class="col-6 col-sm-4">
+                <input [(ngModel)]="nombtarea.cumplido" (change)="Estadotarea()" type="checkbox">
+            </div>
+            <div class="col-6 col-sm-3">
+                {{nombtarea.nombre}}
+            </div>
+            <div class="col-6 col-sm-3">
+                <a  (click)="eliminar(indice)" class="eliminar" [class.bloquear] ="nombtarea.cumplido">&times;</a>
+            </div>
+        </div>
+     </div>
+
+</div>
