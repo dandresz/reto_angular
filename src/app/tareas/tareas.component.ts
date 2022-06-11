@@ -17,11 +17,11 @@ export class TareasComponent implements OnInit {;
 
   agregarTarea(){   
     const newTarea = new tarea(this.nombreTarea);
-    if(this.nombreTarea == "" || this.nombreTarea == " "){
+    if(this.nombreTarea == "" || this.nombreTarea == " "|| this.nombreTarea == ","|| this.nombreTarea == "´"|| this.nombreTarea == "´´"|| this.nombreTarea == "¨"|| this.nombreTarea == "¨¨"){
       window.alert("dato incorrecto");
     }
     else{
-       this.tareas.push(newTarea);
+    this.tareas.push(newTarea);
     this.tareasService.guardarTareas(this.tareas);
     this.obtenerTareas();
     this.nombreTarea="";

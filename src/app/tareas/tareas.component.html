@@ -1,7 +1,7 @@
 <div class="container">
     <h1>LISTA DE TAREAS</h1>   
      <label for="nombtarea" >Nombre de la tarea:</label>
-     <input type="text" id="tarea" [(ngModel)]="nombreTarea" (keyup.enter)="agregarTarea()" onkeydown="return /[a-z,0-9 ]/i.test(event.key)">
+     <input type="text" id="tarea" [(ngModel)]="nombreTarea" (keyup.enter)="agregarTarea()" onkeydown="return /[a-z,0-9, ]/i.test(event.key)">
      <button  (click)="agregarTarea()">Agregar</button>      
         <table class="table">
             <thead>
