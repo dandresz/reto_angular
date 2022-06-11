@@ -1,8 +1,28 @@
 <div class="container">
-    <h1>LISTA DE TAREAS</h1>   
+    <!--<h1>LISTA DE TAREAS</h1>   
      <label for="nombtarea" >Nombre de la tarea:</label>
      <input type="text" id="tarea" [(ngModel)]="nombreTarea" (keyup.enter)="agregarTarea()" onkeydown="return /[a-z,0-9, ]/i.test(event.key)">
-     <button  (click)="agregarTarea()">Agregar</button>      
+     <button  (click)="agregarTarea()">Agregar</button>   -->
+     
+     <h1>LISTA DE TAREAS</h1>
+       <table>
+        
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th><label for="nombtarea" >Nombre de la tarea:</label></th>
+                <td ><input type="text" id="tarea" [(ngModel)]="nombreTarea" (keyup.enter)="agregarTarea()" onkeydown="return /[a-z,0-9, ]/i.test(event.key)"></td>
+                <td><button  (click)="agregarTarea()">Agregar</button> </td>
+            </tr>
+            </tbody>
+       </table>
+       
         <table class="table">
             <thead>
             <tr>
